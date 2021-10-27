@@ -17,7 +17,8 @@ public class ThirdWayLambdaExpression
 
 	public static void main(String[] args)
 	{
-		FunctionalInterface obj=() -> {
+		FunctionalInterface obj=() -> 
+		{
 			System.out.println("functional interface");
 		};
 		obj.abstractMethod();
