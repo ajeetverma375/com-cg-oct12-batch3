@@ -1,7 +1,7 @@
 package com.cg.oct12.batch3.day8.Interface;
 
 // interface can contain- 0 or more abstract,static and default methods
-interface FunIn
+interface FuncIn
 {
 	public abstract void abstractMethod();
 	public default void defaultMethod()
@@ -23,16 +23,18 @@ interface FunIn
 }
 
 
-public class Interface1 implements FunIn
+public class Interface1 implements FuncIn
 {
 public static void main(String[] args) {
-	FunIn.staticMethod();
+	FuncIn.staticMethod();
 	Interface1 a=new Interface1();
 	a.abstractMethod();
 	a.anotherdefaultMethod();
 	a.defaultMethod();
 }
+@Override
 public void abstractMethod()
 {
-	System.out.println("abstarctmethods");}
+	System.out.println("abstarctmethods");
+	}
 }
