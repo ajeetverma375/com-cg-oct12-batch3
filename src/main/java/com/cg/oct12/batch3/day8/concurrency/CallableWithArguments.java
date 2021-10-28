@@ -13,11 +13,13 @@ class DemoClass implements Callable<Integer> {
 
 	public DemoClass() {
 		super();
+		System.out.println("demo construct");
 	}
 
 	public DemoClass(int num) {
 		super();
 		this.num = num;
+		System.out.println("demo  parameter construct");
 	}
 
 	public int getNum() {
@@ -25,11 +27,13 @@ class DemoClass implements Callable<Integer> {
 	}
 
 	public void setNum(int num) {
+		System.out.println("set num");
 		this.num = num;
 	}
 
 	@Override
 	public Integer call() throws Exception {
+		System.out.println("call method");
 		int localbariable = this.num;
 		return localbariable;
 	}
