@@ -7,7 +7,7 @@ public class ExPatDemo implements Runnable
 {	@Override
 	public void run()
 	{
-		for (int i = 0; i <= 10; i++) 
+		for (int i = 0; i <= 4; i++) 
 		{
 	System.out.println("run " + Thread.currentThread().getName() + " " + i);
 		}
@@ -23,20 +23,20 @@ public class ExPatDemo implements Runnable
 
 		ExPatDemo exp = new ExPatDemo();// class ExPatDemo ref var and obj
 
-//        	 1. Using newSingleThreadExecutor
-//		ExecutorService exService = Executors.newSingleThreadExecutor();
+        	// 1. Using newSingleThreadExecutor
+	//	ExecutorService exService = Executors.newSingleThreadExecutor();
 
-//        	2. Using newCachedThreadPool
-//        	ExecutorService exService = Executors.newCachedThreadPool();
-
-//        	3. Using newFixedThreadPool
-    //  	ExecutorService exService = Executors.newFixedThreadPool(3);
+//        //	2. Using newCachedThreadPool
+    //    	ExecutorService exService = Executors.newCachedThreadPool();
 //
-//        	4. Using newScheduledThreadPool
-        	ExecutorService exService = Executors.newScheduledThreadPool(2);
+//        	//3. Using newFixedThreadPool
+//      	ExecutorService exService = Executors.newFixedThreadPool(3);
+//
+//        	//4. Using newScheduledThreadPool
+//        	ExecutorService exService = Executors.newScheduledThreadPool(2);
         	//ScheduledExecutorService exService = Executors.newScheduledThreadPool(2);
 
-		for (int i = 1; i <= 10; i++) {
+		for (int i = 1; i <= 4; i++) {
 			exService.execute(exp);
 		}
 //

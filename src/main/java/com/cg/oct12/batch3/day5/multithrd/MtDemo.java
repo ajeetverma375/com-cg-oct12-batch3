@@ -1,6 +1,6 @@
 package com.cg.oct12.batch3.day5.multithrd;
 
-public class MtDemo extends Thread 
+public class MtDemo extends Thread    //class  currentThread
 {
 	public void myLoop()
 	{
@@ -30,7 +30,12 @@ public class MtDemo extends Thread
 
 	public static void main(String[] args) 
 	{
-
+         System.out.println("sacdsh   "+Thread.currentThread().getPriority());
+         
+         
+         
+         
+         
 		MtDemo obj = new MtDemo();
 //		obj.myLoop();
 		obj.start();

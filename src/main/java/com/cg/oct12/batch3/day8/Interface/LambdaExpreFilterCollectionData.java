@@ -11,10 +11,14 @@ class Product1{
         this.id = id;  
         this.name = name;  
         this.price = price;  
-    }  
+    }
+	    
 }  
-public class LambdaExpreFilterCollectionData{  
-    public static void main(String[] args) {  
+public class LambdaExpreFilterCollectionData
+{  
+    public static void main(String[] args) 
+    { 
+    	
         List<Product1> list=new ArrayList<Product1>();  
         list.add(new Product1(1,"Samsung A5",17000f));  
         list.add(new Product1(3,"Iphone 6S",65000f));  
@@ -30,5 +34,33 @@ public class LambdaExpreFilterCollectionData{
         filtered_data.forEach(  
                 product -> System.out.println(product.name+": "+product.price)  
         );  
+  
     }  
 }  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

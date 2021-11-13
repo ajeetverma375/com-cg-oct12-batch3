@@ -15,10 +15,13 @@ public class callableDemo implements Callable<Integer> {
 			total = total + i;
 		}
 		return total;
+		
+		
 	}
 
 	@Override
-	public Integer call() throws Exception {
+	public Integer call() throws Exception
+	{
 		return getNum();
 	}
 
